@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/admin.css" />
+<script src="https://kit.fontawesome.com/ae73087723.js"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<section id="sidebar">
+		<div class="brandHead">
+			<a href="/" class="brand" style="color: rgb(16, 8, 92);"><img
+				src="uploadfiles/logo2.png" style="width: 50px; margin-right: 10px;" />Dashboard</a>
+		</div>
+		<ul class="side-menu">
+			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
+					class="fa-solid fa-user icon"></i>Courses</a></li>
+			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
+					class="fa-solid fa-clipboard-list icon"></i>Upcoming Tests</a></li>
+			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
+					class="fa-regular fa-user icon"></i>Documents from Admin</a></li>
+			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
+					class="fa-solid fa-calendar-days icon"></i>Attendance of Students</a></li>
+			<li><a href="listclasses" style="color: rgb(16, 8, 92); font-weight: 500"><i
+					class="fa-solid fa-calendar-days icon"></i>List of Classes</a></li>
+			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
+					class="fa-solid fa-user icon"></i>Study Material</a></li>
+			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
+					class="fa-solid fa-user icon"></i>Student Result</a></li>
+			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
+					class="fa-solid fa-user icon"></i>Working Hours</a></li>
+			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
+					class="fa-solid fa-user icon"></i>Settings</a></li>
+		</ul>
+	</section>
+</body>
+</html>
