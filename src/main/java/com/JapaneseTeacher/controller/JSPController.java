@@ -20,4 +20,9 @@ public class JSPController {
 	public String getattendance() {
 		return "BatchDetails/attendance";
 	}
+	
+	@GetMapping("/studentWork")
+	public String getstudentWork() {
+		return "StudyHomework/studentWork";
+	}
 }

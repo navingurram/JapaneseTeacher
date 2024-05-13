@@ -26,6 +26,7 @@
 			background: #fff;
 			border-radius: 7px;
 			border: 1.5px solid #e8e8e8;
+			overflow: scroll;
 			padding: 20px;
 			cursor: pointer;
 		}
