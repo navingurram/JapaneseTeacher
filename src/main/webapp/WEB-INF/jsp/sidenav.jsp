@@ -16,24 +16,21 @@
 				src="uploadfiles/logo2.png" style="width: 50px; margin-right: 10px;" />Dashboard</a>
 		</div>
 		<ul class="side-menu">
-			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
-					class="fa-solid fa-user icon"></i>Courses</a></li>
-			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
-					class="fa-solid fa-clipboard-list icon"></i>Upcoming Tests</a></li>
-			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
-					class="fa-regular fa-user icon"></i>Documents from Admin</a></li>
-			<li><a href="attendance" style="color: rgb(16, 8, 92); font-weight: 500"><i
+			<li><a href="attendance"
+				style="color: rgb(16, 8, 92); font-weight: 500"><i
 					class="fa-solid fa-calendar-days icon"></i>Attendance of Students</a></li>
-			<li><a href="listclasses" style="color: rgb(16, 8, 92); font-weight: 500"><i
+			<li><a href="listclasses"
+				style="color: rgb(16, 8, 92); font-weight: 500"><i
 					class="fa-solid fa-calendar-days icon"></i>List of Classes</a></li>
-			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
-					class="fa-solid fa-user icon"></i>Study Material</a></li>
-			<li><a href="studentWork" style="color: rgb(16, 8, 92); font-weight: 500"><i
+			<li><a href="studymaterial"
+				style="color: rgb(16, 8, 92); font-weight: 500"><i
+					class="fa-solid fa-user icon"></i>Study Material Permissions</a></li>
+			<li><a href="studentWork"
+				style="color: rgb(16, 8, 92); font-weight: 500"><i
 					class="fa-solid fa-user icon"></i>Student Homework and Result</a></li>
-			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
+			<li><a href="workinghours"
+				style="color: rgb(16, 8, 92); font-weight: 500"><i
 					class="fa-solid fa-user icon"></i>Working Hours</a></li>
-			<li><a href="#" style="color: rgb(16, 8, 92); font-weight: 500"><i
-					class="fa-solid fa-user icon"></i>Settings</a></li>
 		</ul>
 	</section>
 </body>

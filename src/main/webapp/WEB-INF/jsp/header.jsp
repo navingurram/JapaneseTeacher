@@ -18,7 +18,8 @@
 
 		<div class="message">
 			<div class="nav-link">
-				<a href="notification"> <i class="fa-regular fa-bell icon"></i> <span class="badge">5</span>
+				<a href="notification"> <i class="fa-regular fa-bell icon"></i>
+					<span class="badge">5</span>
 				</a>
 			</div>
 		</div>
@@ -32,6 +33,8 @@
 					<li
 						style="text-transform: uppercase; font-size: 10.5px; margin-left: 10px; padding: .4rem; font-weight: 600;">
 						Welcome!</li>
+					<li><a href="profile"><i class="fa-solid fa-person-running icon"></i>Profile</a></li>
+					<li><a href="support"><i class="fa-solid fa-person-running icon"></i>Help & Support</a></li>
 					<li><a href="#"><i class="fa-solid fa-person-running icon"></i>Logout</a></li>
 				</ul>
 			</div>

@@ -222,9 +222,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="modal-cancel">
-							<button style="background-color: gray; padding: 10px; color: white; border-radius: 5px; border: none;">Close</button>
-						</div>
+					<div class="modal-cancel" style="display: flex; justify-content: flex-end; margin-right: 20px">
+						<button
+							style="background-color: gray; padding: 10px; color: white; border-radius: 5px; border: none; margin-bottom: 10px">Close</button>
+					</div>
 				</div>
 
 			</div>

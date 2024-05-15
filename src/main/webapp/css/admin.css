@@ -878,8 +878,8 @@ input:checked+.slider:before {
 	width: 70%;
 	max-width: 90%;
 	border: 3px solid #0A415A;
-/* 	border-radius: 20px;
- */	background-color: white;
+ 	border-radius: 20px;
+ 	background-color: white;
 	overflow: auto;
 }
 
@@ -901,12 +901,12 @@ input:checked+.slider:before {
 	margin-left: 10%;
 }
 
-.modal-cancel {
+/* .modal-cancel {
 	width: 10%;
 	display: flex;
 	justify-content: right;
 	align-items: center;
-}
+} */
 
 .modal-head h3 {
 	font-weight: 750;

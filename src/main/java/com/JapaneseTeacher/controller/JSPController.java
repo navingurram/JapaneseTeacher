@@ -25,4 +25,34 @@ public class JSPController {
 	public String getstudentWork() {
 		return "StudyHomework/studentWork";
 	}
+	
+	@GetMapping("/workinghours")
+	public String getworkinghours() {
+		return "Hours/workinghours";
+	}
+	
+	@GetMapping("/viewhours")
+	public String getviewhours() {
+		return "Hours/viewhours";
+	}
+	
+	@GetMapping("/profile")
+	public String getprofile() {
+		return "Profile/profile";
+	}
+	
+	@GetMapping("/studymaterial")
+	public String getstudymaterial() {
+		return "studymaterial";
+	}
+	
+	@GetMapping("/changepassword")
+	public String getchangepassword() {
+		return "Profile/changepassword";
+	}
+	
+	@GetMapping("/support")
+	public String gethelpsupport() {
+		return "support";
+	}
 }
