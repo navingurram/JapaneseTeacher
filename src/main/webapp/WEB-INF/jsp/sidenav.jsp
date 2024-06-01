@@ -24,13 +24,13 @@
 					class="fa-solid fa-calendar-days icon"></i>List of Classes</a></li>
 			<li><a href="studymaterial"
 				style="color: rgb(16, 8, 92); font-weight: 500"><i
-					class="fa-solid fa-user icon"></i>Study Material Permissions</a></li>
+					class="fa-solid fa-book-open icon"></i>Study Material Permissions</a></li>
 			<li><a href="studentWork"
 				style="color: rgb(16, 8, 92); font-weight: 500"><i
-					class="fa-solid fa-user icon"></i>Student Homework and Result</a></li>
+					class="fa-solid fa-square-poll-vertical icon"></i>Student Homework and Result</a></li>
 			<li><a href="workinghours"
 				style="color: rgb(16, 8, 92); font-weight: 500"><i
-					class="fa-solid fa-user icon"></i>Working Hours</a></li>
+					class="fa-solid fa-clock icon"></i>Working Hours</a></li>
 		</ul>
 	</section>
 </body>
