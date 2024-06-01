@@ -82,9 +82,12 @@ align-items: center;
 	background: linear-gradient(45deg, rgb(16, 137, 211) 0%,
 		rgb(18, 177, 209) 100%);
 	color: white;
-	padding: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+    padding-bottom: 10px;
 	margin: 20px auto;
-	border-radius: 20px;
+	border-radius: 10px;
 	box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
 	border: none;
 	transition: all 0.2s ease-in-out;

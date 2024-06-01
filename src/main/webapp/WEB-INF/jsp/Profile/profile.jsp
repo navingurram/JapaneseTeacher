@@ -107,7 +107,7 @@
 					<div>
 						<a href="changepassword">
 							<button
-								style="position: absolute; right: 60px; top: 250px; padding: 20px; border-radius: 7px; border: none; outline: none; background: #4287f5; color: white;">Change
+								style="position: absolute; right: 60px; top: 250px; padding-right: 20px; padding-left: 20px; padding-top: 10px; padding-bottom: 10px; border-radius: 7px; border: none; outline: none; background: #4287f5; color: white;">Change
 								Password</button>
 						</a>
 					</div>
