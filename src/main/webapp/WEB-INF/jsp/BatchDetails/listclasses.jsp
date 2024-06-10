@@ -130,7 +130,7 @@
 									</a></td>
 									<td style="font-weight: 500; text-align: center;"><a
 										style="color: black;" href="viewDetails"><i
-											class="fa-solid fa-ellipsis-vertical"></i></a></td>
+											class="fa-solid fa-eye" style="padding-right: 10px;"></i></a><a href="attendance" style="color: black"><i class="fa-solid fa-clipboard-user"></i></a></td>
 								</tr>
 							</tbody>
 						</table>

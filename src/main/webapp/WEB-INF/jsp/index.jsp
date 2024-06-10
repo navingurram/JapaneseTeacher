@@ -65,6 +65,12 @@
 	font-size: 5rem;
 	color: #1a193b;
 }
+
+@media screen and (max-width: 1000px) {
+	.container2 {
+		grid-template-columns: 1fr;
+	}
+}
 </style>
 <body>
 	<jsp:include page="sidenav.jsp"></jsp:include>

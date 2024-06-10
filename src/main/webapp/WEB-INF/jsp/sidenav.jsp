@@ -19,6 +19,9 @@
 			<li><a href="attendance"
 				style="color: rgb(16, 8, 92); font-weight: 500"><i
 					class="fa-solid fa-calendar-days icon"></i>Attendance of Students</a></li>
+			<li><a href="makeover"
+				style="color: rgb(16, 8, 92); font-weight: 500"><i
+					class="fa-solid fa-calendar-days icon"></i>Make Over Classes</a></li>
 			<li><a href="listclasses"
 				style="color: rgb(16, 8, 92); font-weight: 500"><i
 					class="fa-solid fa-calendar-days icon"></i>List of Classes</a></li>

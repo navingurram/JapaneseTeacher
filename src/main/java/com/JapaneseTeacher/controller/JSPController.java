@@ -55,4 +55,14 @@ public class JSPController {
 	public String gethelpsupport() {
 		return "support";
 	}
+
+	@GetMapping("/makeover")
+	public String getmakeover() {
+		return "Makeover/makeover";
+	}
+
+	@GetMapping("/notification")
+	public String getnotification() {
+		return "notification";
+	}
 }

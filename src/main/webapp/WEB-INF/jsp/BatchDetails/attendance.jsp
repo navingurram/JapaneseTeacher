@@ -118,6 +118,7 @@
                                         <td style="font-weight: 500"><select id="" name=""
                                                 style="padding: 13px; border-radius: 5px; border-color: #bfb8b8">
                                                 <option>Select</option>
+                                                <option>Pending</option>
                                                 <option>Present</option>
                                                 <option>Absent</option>
                                             </select></td>
@@ -135,6 +136,7 @@
                                         <td style="font-weight: 500"><select id="" name=""
                                                 style="padding: 13px; border-radius: 5px; border-color: #bfb8b8">
                                                 <option>Select</option>
+                                                <option>Pending</option>
                                                 <option>Present</option>
                                                 <option>Absent</option>
                                             </select></td>
