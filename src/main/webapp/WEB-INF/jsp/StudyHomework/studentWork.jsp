@@ -141,8 +141,19 @@
 									<td style="font-weight: 500;">01 April 2024</td>
 									<td style="font-weight: 500;">Homework</td>
 									<td style="font-weight: 500;">Ashish Mishra</td>
-									<td style="font-weight: 500">Ongoing</td>
-									<td style="font-weight: 500;">Pass</td>
+									<td style="font-weight: 500">Done</td>
+									<td style="font-weight: 500;">50%</td>
+									<td data-label="Action"><i class="fa-solid fa-eye"></i></td>
+
+								</tr>
+								<tr>
+									<td style="font-weight: 500;">1</td>
+									<td style="font-weight: 500;">14 February 2024</td>
+									<td style="font-weight: 500;">01 April 2024</td>
+									<td style="font-weight: 500;">Homework</td>
+									<td style="font-weight: 500;">Ashish Mishra</td>
+									<td style="font-weight: 500">Not Done</td>
+									<td style="font-weight: 500;">50%</td>
 									<td data-label="Action"><i class="fa-solid fa-eye"></i></td>
 
 								</tr>
@@ -178,10 +189,10 @@
 									elit. Eligendi, at!</h3>
 
 								<div class="modal-mcq">
-									<h4 class="correct wrong">1.dsjhkjshkjdsah</h4>
-									<h4 class="correct wrong">2.shvhbsj</h4>
-									<h4 class="correct wrong">3.sjvdshsbb</h4>
-									<h4 class="correct wrong">4.vhvc</h4>
+									<h4 class="correct wrong" style="color: greenyellow">1.dsjhkjshkjdsah</h4>
+									<h4 class="correct wrong" style="color: red">2.shvhbsj</h4>
+									<h4 class="correct wrong" style="color: red">3.sjvdshsbb</h4>
+									<h4 class="correct wrong" style="color: red">4.vhvc</h4>
 								</div>
 
 							</div>
@@ -198,10 +209,10 @@
 									elit. Eligendi, at!</h3>
 
 								<div class="modal-mcq">
-									<h4>1.dsjhkjshkjdsah</h4>
-									<h4>2.shvhbsj</h4>
-									<h4>3.sjvdshsbb</h4>
-									<h4>4.vhvc</h4>
+									<h4 style="color: red">1.dsjhkjshkjdsah</h4>
+									<h4 style="color: red">2.shvhbsj</h4>
+									<h4 style="color: greenyellow">3.sjvdshsbb</h4>
+									<h4 style="color: red">4.vhvc</h4>
 								</div>
 
 							</div>

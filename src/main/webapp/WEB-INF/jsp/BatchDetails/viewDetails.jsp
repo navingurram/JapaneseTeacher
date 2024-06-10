@@ -107,9 +107,9 @@
 									style="margin-top: 20px; font-size: 13px; border: 2px solid rgb(16, 8, 92); padding: 10px; border-radius: 10px;">
 									<label for="">Zoom
 										link:</label>
-									<label>The HTML <a>tag defines a hyperlink. It has the following syntax: The most
-											important attribute of the <a> element is the hrefattribute, which indicates
-												the link's destination. … See more</label>
+									<label><a href="#">The HTML tag defines a hyperlink. It has the following syntax: The most
+											important attribute of the element is the hrefattribute, which indicates
+												the link's destination. … See more<a></label>
 								</div>
 							</div>
 						</div>
@@ -129,8 +129,8 @@
 							</div>
 							<div style="width: 50%;">
 								<h4 style="padding-top: 20px; padding-bottom: 10px;">Book Details</h4>
-								<label for="" style="font-size: 13px; color: #55d0ff;">I found an Interesting link with 40+ computer science premium courses
-									link. 1. Basic Programming Languages 2. Web Design & Development 3.</label>
+								<label for="" style="font-size: 13px; color: #55d0ff;"><a href="#" style="font-size: 13px">I found an Interesting link with 40+ computer science premium courses
+									link. 1. Basic Programming Languages 2. Web Design & Development 3.</a></label>
 							</div>
 						</div>
 					</div>

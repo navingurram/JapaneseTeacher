@@ -59,7 +59,7 @@ body {
 	display: flex;
 	align-items: center;
 	height: 64px;
-	font-weight: 700;
+	font-weight: 800;
 	color: black;
 	position: sticky;
 	top: 0;
@@ -373,7 +373,7 @@ body {
 }
 
 .navcont .profile .profile-link a:hover {
-	background: #F1F0F6;
+	background: #55d0ff;
 }
 
 /* Mainbar */
