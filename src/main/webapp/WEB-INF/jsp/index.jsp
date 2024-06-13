@@ -341,7 +341,7 @@ pageEncoding="ISO-8859-1" %>
           </div>
           <div class="card">
             <div class="card-heading-div">
-              <h3>Upcoming Homework</h3>
+              <h3 style="margin-left: 20px;">Upcoming Tests</h3>
               <i class="fa-solid fa-calendar-days" style="font-size: 50px; margin-right: 20px;"></i>
             </div>
             <div class="view-more-div">
@@ -352,7 +352,7 @@ pageEncoding="ISO-8859-1" %>
           </div>
           <div class="card">
             <div class="card-heading-div">
-              <h3>Upcoming Test</h3>
+              <h3 style="margin-left: 20px;">Documents from Admin</h3>
               <i class="fa-solid fa-file" style="font-size: 50px; margin-right: 20px;"></i>
             </div>
             <div class="view-more-div">

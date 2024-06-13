@@ -67,6 +67,45 @@ pageEncoding="ISO-8859-1" %>
       top: 12.5rem;
       right: 2rem;
     }
+
+    .popup {
+      background-color: white;
+      max-width: 400px;
+      min-width: 275px;
+      max-height: 40%;
+      min-height: 35%;
+      position: fixed;
+      top: 35%;
+      left: 40%;
+      border-radius: 5px;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      display: none;
+      box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+
+    .popup-content {
+      height: 250px;
+      width: 500px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .close {
+      border-radius: 50%;
+      position: absolute;
+      left: 380px;
+      top: 5px;
+    }
+
+    .popup.flex {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
   </style>
 
   <body>
@@ -148,8 +187,10 @@ pageEncoding="ISO-8859-1" %>
                 </thead>
                 <tbody class="tablebody">
                   <tr>
-                    <td style="font-weight: 500">12th February 2024</td>
-                    <td style="font-weight: 500">1</td>
+                    <td style="font-weight: 500; color: #55d0ff;" id="button2" class="button2">
+                      12th February 2024
+                    </td>
+                    <td style="font-weight: 500" class="click">1</td>
                     <td style="font-weight: 500">Active</td>
                     <td style="font-weight: 500">Rugular</td>
                     <td style="font-weight: 500">Student 1</td>
@@ -184,8 +225,10 @@ pageEncoding="ISO-8859-1" %>
                     </td>
                   </tr>
                   <tr>
-                    <td style="font-weight: 500">14th February 2024</td>
-                    <td style="font-weight: 500">1</td>
+                    <td style="font-weight: 500; color: #55d0ff;">
+                      14th February 2024
+                    </td>
+                    <td style="font-weight: 500; ">1</td>
                     <td style="font-weight: 500">Active</td>
                     <td style="font-weight: 500">Rugular</td>
                     <td style="font-weight: 500">Student 1</td>
@@ -224,19 +267,30 @@ pageEncoding="ISO-8859-1" %>
             </div>
           </div>
         </div>
-        <button type="button" class="click">click</button>
         <div class="leave-modal-main">
           <div class="modal-top">
             <p>Kindly includes details of the Makeover Class here</p>
           </div>
           <div class="modal-bottom">
-            <button type="button" class="btn-yes">Yes</button>
+            <button type="button" class="btn-yes">
+              <a href="makeover" style="color: white">Yes</a>
+            </button>
             <button type="button" class="btn-cancel">Cancel</button>
+          </div>
+        </div>
+        <div class="popup">
+          <div class="popup-content">
+            <span class="close"><i class="fa-solid fa-circle-xmark"></i></span>
+            <h1>Do you want leave ?</h1>
+            <div class="modal-bottom2">
+              <button type="button" class="btn-yes2">Yes</button>
+              <button type="button" class="btn-cancel2">No</button>
+            </div>
           </div>
         </div>
       </main>
     </section>
-    <script src="js/adminscript.js"></script>
+    <script src="js/index.js"></script>
 
     <script>
       const clickBtn = document.querySelector(".click");
@@ -266,6 +320,19 @@ pageEncoding="ISO-8859-1" %>
           modal.classList.remove("show");
         }, 300);
       }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("button2")
+          .addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "flex";
+          });
+
+        document.querySelector(".close").addEventListener("click", function () {
+          document.querySelector(".popup").style.display = "none";
+        });
+      });
     </script>
   </body>
 </html>
