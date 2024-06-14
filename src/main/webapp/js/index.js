@@ -96,22 +96,3 @@ items.forEach((item => {
   });
 
 }));
-
-const modal = document.getElementById('myModal');
-const openModalIcon = document.getElementById('openModal');
-const closeModalIcon = document.getElementById('closeModal');
-
-openModalIcon.addEventListener('click', () => {
-  modal.style.display = 'block';
-});
-
-closeModalIcon.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-
-window.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-});
-
