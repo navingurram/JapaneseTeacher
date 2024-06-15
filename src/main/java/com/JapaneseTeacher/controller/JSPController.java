@@ -65,4 +65,9 @@ public class JSPController {
 	public String getnotification() {
 		return "notification";
 	}
+
+	@GetMapping("/")
+	public String index() {
+		return "index";
+	}
 }
