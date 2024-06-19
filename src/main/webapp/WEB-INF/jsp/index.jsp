@@ -53,7 +53,7 @@ pageEncoding="ISO-8859-1" %>
       width: 25%;
       min-width: 250px;
       max-width: 400px;
-      height: 60%;
+      height: 500px;
       box-shadow: 0px 0px 4px 0px rgba(50, 145, 125, 0.342);
       border-radius: 3px;
       position: relative;
@@ -109,7 +109,7 @@ pageEncoding="ISO-8859-1" %>
     }
 
     .card:hover .btn-one {
-      background-color: #282c3f;
+      background-color: #0093e9;
       border-radius: 4px;
     }
 
