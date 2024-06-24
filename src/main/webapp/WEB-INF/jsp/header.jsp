@@ -213,7 +213,7 @@
 		<i class="fa-solid fa-bars toggle-sidebar"></i>
 		<div class="subnav">
 			<ul>
-				<li><a href="#"><img src="uploadfiles/logo.png"
+				<li><a href="/"><img src="uploadfiles/logo.png"
 						style="width: 300px; margin-top: 10px;" /></a></li>
 			</ul>
 		</div>

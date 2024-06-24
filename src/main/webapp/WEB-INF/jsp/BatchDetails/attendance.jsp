@@ -156,7 +156,8 @@ pageEncoding="ISO-8859-1" %>
       align-items: center;
     }
 
-    .btn-yes, .btn-cancel {
+    .btn-yes,
+    .btn-cancel {
       width: 25%;
       padding: 2% 0;
       margin-top: 7%;
@@ -170,10 +171,11 @@ pageEncoding="ISO-8859-1" %>
       transition: background-color 0.4s, box-shadow 0.5s, transform 0.6s;
     }
 
-    .btn-yes:hover, .btn-cancel:hover {
+    .btn-yes:hover,
+    .btn-cancel:hover {
       background-color: #444;
       box-shadow: 1px 0px 5px 3px rgba(0, 0, 0, 0.1);
-      transform: translateY(-3px); 
+      transform: translateY(-3px);
     }
 
     .second-modal-main {
@@ -188,7 +190,7 @@ pageEncoding="ISO-8859-1" %>
       height: 50vh;
       border-radius: 4px;
       box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
-      z-index: 3; 
+      z-index: 3;
       background-color: white;
     }
 
@@ -228,20 +230,17 @@ pageEncoding="ISO-8859-1" %>
       cursor: pointer;
     }
 
-
-    @media (max-width:700px){
-
+    @media (max-width: 700px) {
       main > button {
         width: 80px;
       }
-    
+
       .second-modal-main {
- 
         width: 65%;
       }
-
-
     }
+
+    
   </style>
 
   <body>
@@ -323,7 +322,7 @@ pageEncoding="ISO-8859-1" %>
                 </thead>
                 <tbody class="tablebody">
                   <tr>
-                    <td style="font-weight: 500; color: #55d0ff;" class="click">
+                    <td style="font-weight: 500; color: #55d0ff" class="click">
                       12th February 2024
                     </td>
                     <td style="font-weight: 500">1</td>
@@ -361,10 +360,10 @@ pageEncoding="ISO-8859-1" %>
                     </td>
                   </tr>
                   <tr>
-                    <td style="font-weight: 500; color: #55d0ff;" class=>
+                    <td style="font-weight: 500; color: #55d0ff">
                       14th February 2024
                     </td>
-                    <td style="font-weight: 500; ">1</td>
+                    <td style="font-weight: 500">1</td>
                     <td style="font-weight: 500">Active</td>
                     <td style="font-weight: 500">Rugular</td>
                     <td style="font-weight: 500">Student 1</td>
@@ -398,6 +397,20 @@ pageEncoding="ISO-8859-1" %>
                       ></a>
                     </td>
                   </tr>
+                  <tr style="text-align: center;">
+                    <td style="font-weight: 500; color: #55d0ff">
+                      14th February 2024
+                    </td>
+                    <td style="font-weight: 500">-</td>
+                    <td style="font-weight: 500">-</td>
+                    <td style="font-weight: 500">-</td>
+                    <td style="font-weight: 500">-</td>
+                    <td style="font-weight: 500">-</td>  
+                    <td style="font-weight: 500; text-align: center">
+                      <h3 style="color: red">Leave</h3>
+                    </td>
+                    <td>-</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -412,13 +425,15 @@ pageEncoding="ISO-8859-1" %>
             <button type="button" class="btn-cancel">Cancel</button>
           </div>
         </div>
-    
+
         <div class="second-modal-main">
           <div class="first-modal-top">
             <p>Kindly includes details of the Makeover Class here</p>
             <div class="first-modal-bottom">
-              <button type="button" class="btn-yes"><a href="makeover" style="color: white;">Yes</a></button>
-              <button type="button" class="btn-cancel">Cancel</button>            
+              <button type="button" class="btn-yes">
+                <a href="makeover" style="color: white">Yes</a>
+              </button>
+              <button type="button" class="btn-cancel">Cancel</button>
             </div>
           </div>
         </div>
@@ -426,41 +441,40 @@ pageEncoding="ISO-8859-1" %>
     </section>
     <script src="js/index.js"></script>
 
-   
     <script>
-      const clickBtn = document.querySelector('.click');
-      const firstModal = document.querySelector('.first-modal-main');
-      const cancelBtn = document.querySelector('.btn-cancel');
-      const yesBtn = document.querySelector('.btn-yes');
-      const secondModal = document.querySelector('.second-modal-main');
-      const closeBtn = document.querySelector('.close-btn');
-  
+      const clickBtn = document.querySelector(".click");
+      const firstModal = document.querySelector(".first-modal-main");
+      const cancelBtn = document.querySelector(".btn-cancel");
+      const yesBtn = document.querySelector(".btn-yes");
+      const secondModal = document.querySelector(".second-modal-main");
+      const closeBtn = document.querySelector(".close-btn");
+
       const showModal = (modal) => {
-        modal.classList.add('show');
+        modal.classList.add("show");
         setTimeout(() => {
-          modal.classList.add('visible');
+          modal.classList.add("visible");
         }, 10);
       };
-  
+
       const closeModal = (modal) => {
-        modal.classList.remove('visible');
+        modal.classList.remove("visible");
         setTimeout(() => {
-          modal.classList.remove('show');
+          modal.classList.remove("show");
         }, 300);
       };
-  
-      clickBtn.addEventListener('click', () => showModal(firstModal));
-  
-      cancelBtn.addEventListener('click', () => closeModal(firstModal));
-  
-      yesBtn.addEventListener('click', () => {
+
+      clickBtn.addEventListener("click", () => showModal(firstModal));
+
+      cancelBtn.addEventListener("click", () => closeModal(firstModal));
+
+      yesBtn.addEventListener("click", () => {
         closeModal(firstModal);
         setTimeout(() => showModal(secondModal), 300);
       });
-  
-      closeBtn.addEventListener('click', () => closeModal(secondModal));
-  
-      window.addEventListener('click', (event) => {
+
+      closeBtn.addEventListener("click", () => closeModal(secondModal));
+
+      window.addEventListener("click", (event) => {
         if (!firstModal.contains(event.target) && event.target !== clickBtn) {
           closeModal(firstModal);
         }
@@ -468,6 +482,7 @@ pageEncoding="ISO-8859-1" %>
           closeModal(secondModal);
         }
       });
+
     </script>
   </body>
 </html>
