@@ -191,8 +191,8 @@
 								<div class="modal-mcq">
 									<h4 class="correct wrong" style="color: greenyellow">1.dsjhkjshkjdsah</h4>
 									<h4 class="correct wrong" style="color: red">2.shvhbsj</h4>
-									<h4 class="correct wrong" style="color: red">3.sjvdshsbb</h4>
-									<h4 class="correct wrong" style="color: red">4.vhvc</h4>
+									<h4 class="correct wrong" style="color: black">3.sjvdshsbb</h4>
+									<h4 class="correct wrong" style="color: black">4.vhvc</h4>
 								</div>
 
 							</div>
@@ -209,8 +209,8 @@
 									elit. Eligendi, at!</h3>
 
 								<div class="modal-mcq">
-									<h4 style="color: red">1.dsjhkjshkjdsah</h4>
-									<h4 style="color: red">2.shvhbsj</h4>
+									<h4 style="color: black">1.dsjhkjshkjdsah</h4>
+									<h4 style="color: black">2.shvhbsj</h4>
 									<h4 style="color: greenyellow">3.sjvdshsbb</h4>
 									<h4 style="color: red">4.vhvc</h4>
 								</div>

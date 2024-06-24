@@ -30,7 +30,6 @@ pageEncoding="ISO-8859-1" %>
       width: 100%;
       height: 100%;
       background-color: #0093e9;
-
     }
 
     main {
@@ -43,33 +42,37 @@ pageEncoding="ISO-8859-1" %>
       width: 100%;
       height: 100vh;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       flex-wrap: wrap;
       background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     /*card style start.........................................................*/
-    .card {
+    .card1 {
       width: 25%;
       min-width: 250px;
       max-width: 400px;
-      height: 60%;
+      height: 270px;
       box-shadow: 0px 0px 4px 0px rgba(50, 145, 125, 0.342);
-      border-radius: 3px;
+      border-radius: 10px;
       position: relative;
-      overflow: hidden;
+      overflow: visible;
       /* background: rgba(255, 255, 255, 0.2); */
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.3);
+      background-color: white;
+      margin-top: 50px;
     }
 
-    .card:hover {
+    .card1:hover {
       box-shadow: 0px 0px 8px 1px rgba(50, 145, 125, 0.342);
     }
 
-    .card-heading-div {
+    /* .card-heading-div {
       width: 100%;
-      height: 50%;
+      height: 100%;
       display: flex;
       align-items: center;
       z-index: 2;
@@ -79,16 +82,17 @@ pageEncoding="ISO-8859-1" %>
     .card-heading-div {
       font-size: 1.3rem;
       font-weight: 900;
-    }
+    } */
 
     .view-more-div {
       width: 100%;
-      height: 50%;
+      height: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-between;
+      align-items: flex-end;
       z-index: 2;
       border-top: none;
+      background-color: white;
     }
 
     .view-more-div span {
@@ -98,63 +102,6 @@ pageEncoding="ISO-8859-1" %>
 
     .card:hover .view-more-div span {
       color: white;
-    }
-
-    .btn-one {
-      color: #0093e9;
-      transition: all 0.3s;
-      position: relative;
-      padding: 15px;
-      border-radius: 4px;
-    }
-
-    .card:hover .btn-one {
-      background-color: #282c3f;
-      border-radius: 4px;
-    }
-
-    .btn-one span {
-      transition: all 0.3s;
-    }
-
-    .btn-one::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      top: -4%;
-      left: -5%;
-      width: 110%;
-      height: 105%;
-      z-index: 1;
-      opacity: 0;
-      transition: all 0.3s;
-      transform: scale(0.1, 1);
-    }
-
-    .btn-one:hover span {
-      letter-spacing: 2px;
-    }
-
-    .btn-one:hover::before {
-      opacity: 1;
-      transform: scale(1, 1);
-    }
-
-    .btn-one::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      transition: all 0.3s;
-      background-color: rgba(255, 255, 255, 0.1); */
-    }
-
-    .btn-one:hover::after {
-      opacity: 0;
-      transform: scale(0.1, 1);
     }
 
     /*card style end.........................................................*/
@@ -267,10 +214,27 @@ pageEncoding="ISO-8859-1" %>
       background-color: inherit;
     }
 
+    .btn23 {
+      color: #0093e9;
+      background-color: white;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 16px;
+      border-radius: 7px;
+    }
+
+    .btn23:hover {
+      background-color: #0093e9;
+      transition: all 1s;
+      color: white;
+    }
+
     /*modal style end..................................................................*/
 
     /*responsive style start.........................................................*/
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       html,
       body {
         width: 100%;
@@ -287,19 +251,18 @@ pageEncoding="ISO-8859-1" %>
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
       }
 
-      .card {
-        width: 70%;
-        min-width: 270px;
-        max-width: 400px;
-        height: 60vh;
+      .card1 {
+        width: 100%;
+        min-width: 300px;
+        max-width: 450px;
+        height: 270px;
       }
 
-      .card:nth-child(odd) {
+      .card1:nth-child(odd) {
         margin-top: 15%;
         margin-bottom: 15%;
       }
@@ -319,6 +282,10 @@ pageEncoding="ISO-8859-1" %>
       }
     }
 
+    ol {
+      list-style-type: decimal;
+    }
+
     /*responsive style end.........................................................*/
   </style>
 
@@ -328,37 +295,145 @@ pageEncoding="ISO-8859-1" %>
       <jsp:include page="header.jsp"></jsp:include>
       <main>
         <div class="dashboard-main">
-          <div class="card">
-            <div class="card-heading-div">
-              <h3 style="margin-left: 20px;">Courses</h3>
-              <i class="fa-solid fa-book" style="font-size: 50px; margin-right: 20px;"></i>
+          <div class="card1">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 10px;
+              "
+            >
+              <h3 style="margin-left: 10px; font-size: 18px; font-weight: 800">
+                Courses
+              </h3>
+              <i
+                class="fa-solid fa-book"
+                style="font-size: 50px; margin-right: 20px; color: #102c57"
+              ></i>
             </div>
-            <div class="view-more-div">
-              <div class="btn1 btn-one" data-type="courses">
-                <span>view more</span>
-              </div>
+            <div
+              style="margin-left: 20px; font-size: 17px; font-weight: normal"
+            >
+              <ol>
+                <li style="padding: 5px;"><label>JLPT-N5 </label>-<label style="padding-left: 30px;">N5-10</label></li>
+                <li style="padding: 5px;"><label>JLPT-N4 </label>-<label style="padding-left: 30px;">N5-12</label></li>
+                <li style="padding: 5px;"><label>JLPT-N2 </label>-<label style="padding-left: 30px;">N5-12</label></li>
+                <li style="padding: 5px;"><label>JLPT-N2 </label>-<label style="padding-left: 30px;">N5-12</label></li>
+              </ol>
+            </div>
+            <div
+              class="btn1"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                cursor: pointer;
+              "
+              data-type="courses"
+            >
+              <button class="btn23">View More</button>
             </div>
           </div>
-          <div class="card">
-            <div class="card-heading-div">
-              <h3 style="margin-left: 20px;">Upcoming Tests</h3>
-              <i class="fa-solid fa-calendar-days" style="font-size: 50px; margin-right: 20px;"></i>
+          <div class="card1">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 10px;
+              "
+            >
+              <h3 style="margin-left: 10px; font-size: 18px; font-weight: 800">
+                Upcoming Tests
+              </h3>
+              <i
+                class="fa-solid fa-scroll"
+                style="font-size: 50px; margin-right: 20px; color: #402E7A"
+              ></i>
             </div>
-            <div class="view-more-div">
-              <div class="btn1 btn-one" data-type="homework">
-                <span>view more</span>
+            <div
+              style="
+                margin-left: 20px;
+                margin-top: 10px;
+                font-size: 17px;
+                font-weight: normal;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 20px;
+              "
+            >
+              <div>
+                <h5>Title</h5>
+                <ol>
+                  <li style="padding: 5px;"><label>JLPT-N5 </label></li>
+                  <li style="padding: 5px;"><label>JLPT-N4 </label></li>
+                  <li style="padding: 5px;"><label>JLPT-N2 </label></li>
+                </ol>
               </div>
+              <div>
+                <h5>Due Date</h5>
+                <ol>
+                  <li style="padding: 5px;"><label>JLPT-N5 </label></li>
+                  <li style="padding: 5px;"><label>JLPT-N4 </label></li>
+                  <li style="padding: 5px;"><label>JLPT-N2 </label></li>
+                </ol>
+              </div>
+            </div>
+            <div
+              class="btn1"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                cursor: pointer;
+              "
+              data-type="homework"
+            >
+              <button class="btn23">View More</button>
             </div>
           </div>
-          <div class="card">
-            <div class="card-heading-div">
-              <h3 style="margin-left: 20px;">Documents from Admin</h3>
-              <i class="fa-solid fa-file" style="font-size: 50px; margin-right: 20px;"></i>
+          <div class="card1">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 10px;
+              "
+            >
+              <h3 style="margin-left: 10px; font-size: 18px; font-weight: 800">
+                Documents from Admin
+              </h3>
+              <i
+                class="fa-solid fa-file"
+                style="font-size: 50px; margin-right: 20px; color: #3572EF"
+              ></i>
             </div>
-            <div class="view-more-div">
-              <div class="btn1 btn-one" data-type="tests">
-                <span>view more</span>
-              </div>
+            <div
+              style="margin-left: 20px; font-size: 17px; font-weight: normal"
+            >
+              <ol>
+                <li style="padding: 5px;"><label>JLPT-N5 - N5-10 </label></li>
+                <li style="padding: 5px;"><label>JLPT-N4 - N5-12 </label></li>
+                <li style="padding: 5px;"><label>JLPT-N2 - N5-10 </label></li>
+                <li style="padding: 5px;"><label>JLPT-N2 - N5-10 </label></li>
+              </ol>
+            </div>
+            <div
+              class="btn1"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                cursor: pointer;
+              "
+              data-type="tests"
+            >
+              <button class="btn23">View More</button>
             </div>
           </div>
         </div>

@@ -106,6 +106,141 @@ pageEncoding="ISO-8859-1" %>
       transform: translate(-50%, -50%) scale(1);
       opacity: 1;
     }
+
+    .first-modal-main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+      display: none;
+      transition: transform 0.9s ease, opacity 0.3s ease;
+      max-width: 400px;
+      min-width: 275px;
+      max-height: 40%;
+      min-height: 35%;
+      border-radius: 5px;
+      z-index: 2; /* Second modal */
+      box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+
+    .first-modal-main.show {
+      display: block;
+    }
+
+    .first-modal-main.visible {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+
+    .first-modal-top {
+      width: 100%;
+      height: 7rem;
+      text-align: center;
+      padding: 5%;
+      margin-top: 5%;
+    }
+
+    .first-modal-top p {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .first-modal-bottom {
+      width: 100%;
+      height: 10rem;
+      padding: 10% 1%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .btn-yes,
+    .btn-cancel {
+      width: 25%;
+      padding: 2% 0;
+      margin-top: 7%;
+      cursor: pointer;
+      border: none;
+      background-color: #282c3f;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: whitesmoke;
+      transition: background-color 0.4s, box-shadow 0.5s, transform 0.6s;
+    }
+
+    .btn-yes:hover,
+    .btn-cancel:hover {
+      background-color: #444;
+      box-shadow: 1px 0px 5px 3px rgba(0, 0, 0, 0.1);
+      transform: translateY(-3px);
+    }
+
+    .second-modal-main {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+      display: none;
+      transition: transform 0.9s ease, opacity 0.3s ease;
+      height: 50vh;
+      border-radius: 4px;
+      box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+      z-index: 3;
+      background-color: white;
+    }
+
+    .second-modal-main.show {
+      display: block;
+    }
+
+    .second-modal-main.visible {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+
+    .second-modal-content {
+      width: 100%;
+      height: 100%;
+      padding: 5px 10px;
+    }
+
+    .second-modal-close-button {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .close-btn {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close-btn:hover,
+    .close-btn:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 700px) {
+      main > button {
+        width: 80px;
+      }
+
+      .second-modal-main {
+        width: 65%;
+      }
+    }
+
+    
   </style>
 
   <body>
@@ -187,10 +322,10 @@ pageEncoding="ISO-8859-1" %>
                 </thead>
                 <tbody class="tablebody">
                   <tr>
-                    <td style="font-weight: 500; color: #55d0ff;" id="button2" class="button2">
+                    <td style="font-weight: 500; color: #55d0ff" class="click">
                       12th February 2024
                     </td>
-                    <td style="font-weight: 500" class="click">1</td>
+                    <td style="font-weight: 500">1</td>
                     <td style="font-weight: 500">Active</td>
                     <td style="font-weight: 500">Rugular</td>
                     <td style="font-weight: 500">Student 1</td>
@@ -225,10 +360,10 @@ pageEncoding="ISO-8859-1" %>
                     </td>
                   </tr>
                   <tr>
-                    <td style="font-weight: 500; color: #55d0ff;">
+                    <td style="font-weight: 500; color: #55d0ff">
                       14th February 2024
                     </td>
-                    <td style="font-weight: 500; ">1</td>
+                    <td style="font-weight: 500">1</td>
                     <td style="font-weight: 500">Active</td>
                     <td style="font-weight: 500">Rugular</td>
                     <td style="font-weight: 500">Student 1</td>
@@ -262,29 +397,43 @@ pageEncoding="ISO-8859-1" %>
                       ></a>
                     </td>
                   </tr>
+                  <tr style="text-align: center;">
+                    <td style="font-weight: 500; color: #55d0ff">
+                      14th February 2024
+                    </td>
+                    <td style="font-weight: 500">-</td>
+                    <td style="font-weight: 500">-</td>
+                    <td style="font-weight: 500">-</td>
+                    <td style="font-weight: 500">-</td>
+                    <td style="font-weight: 500">-</td>  
+                    <td style="font-weight: 500; text-align: center">
+                      <h3 style="color: red">Leave</h3>
+                    </td>
+                    <td>-</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <div class="leave-modal-main">
-          <div class="modal-top">
-            <p>Kindly includes details of the Makeover Class here</p>
+        <div class="first-modal-main">
+          <div class="first-modal-top">
+            <p>Do you want leave?</p>
           </div>
-          <div class="modal-bottom">
-            <button type="button" class="btn-yes">
-              <a href="makeover" style="color: white">Yes</a>
-            </button>
+          <div class="first-modal-bottom">
+            <button type="button" class="btn-yes">Yes</button>
             <button type="button" class="btn-cancel">Cancel</button>
           </div>
         </div>
-        <div class="popup">
-          <div class="popup-content">
-            <span class="close"><i class="fa-solid fa-circle-xmark"></i></span>
-            <h1>Do you want leave ?</h1>
-            <div class="modal-bottom2">
-              <button type="button" class="btn-yes2">Yes</button>
-              <button type="button" class="btn-cancel2">No</button>
+
+        <div class="second-modal-main">
+          <div class="first-modal-top">
+            <p>Kindly includes details of the Makeover Class here</p>
+            <div class="first-modal-bottom">
+              <button type="button" class="btn-yes">
+                <a href="makeover" style="color: white">Yes</a>
+              </button>
+              <button type="button" class="btn-cancel">Cancel</button>
             </div>
           </div>
         </div>
@@ -294,45 +443,46 @@ pageEncoding="ISO-8859-1" %>
 
     <script>
       const clickBtn = document.querySelector(".click");
-      const modal = document.querySelector(".leave-modal-main");
+      const firstModal = document.querySelector(".first-modal-main");
       const cancelBtn = document.querySelector(".btn-cancel");
+      const yesBtn = document.querySelector(".btn-yes");
+      const secondModal = document.querySelector(".second-modal-main");
+      const closeBtn = document.querySelector(".close-btn");
 
-      clickBtn.addEventListener("click", () => {
+      const showModal = (modal) => {
         modal.classList.add("show");
         setTimeout(() => {
           modal.classList.add("visible");
         }, 10);
-      });
+      };
 
-      cancelBtn.addEventListener("click", () => {
-        closeModal();
-      });
-
-      window.addEventListener("click", (event) => {
-        if (event.target === modal) {
-          closeModal();
-        }
-      });
-
-      function closeModal() {
+      const closeModal = (modal) => {
         modal.classList.remove("visible");
         setTimeout(() => {
           modal.classList.remove("show");
         }, 300);
-      }
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("button2")
-          .addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "flex";
-          });
+      };
 
-        document.querySelector(".close").addEventListener("click", function () {
-          document.querySelector(".popup").style.display = "none";
-        });
+      clickBtn.addEventListener("click", () => showModal(firstModal));
+
+      cancelBtn.addEventListener("click", () => closeModal(firstModal));
+
+      yesBtn.addEventListener("click", () => {
+        closeModal(firstModal);
+        setTimeout(() => showModal(secondModal), 300);
       });
+
+      closeBtn.addEventListener("click", () => closeModal(secondModal));
+
+      window.addEventListener("click", (event) => {
+        if (!firstModal.contains(event.target) && event.target !== clickBtn) {
+          closeModal(firstModal);
+        }
+        if (!secondModal.contains(event.target) && event.target !== yesBtn) {
+          closeModal(secondModal);
+        }
+      });
+
     </script>
   </body>
 </html>

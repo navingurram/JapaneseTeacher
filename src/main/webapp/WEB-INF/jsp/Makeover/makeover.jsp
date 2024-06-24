@@ -51,7 +51,7 @@
     .tablebody tr>td {
        padding: 1rem 1.8rem;
        font-weight: 500;
-       font-size: 13.5px;
+       font-size: 15px;
     }
 
     .from,
@@ -119,8 +119,8 @@
       </thead>
       <tbody class="tablebody">
         <tr class="rows">
-          <td>Thursday</td>
-          <td>15 Feb 2024</td>
+          <td style="color: #55d0ff;">Thursday</td>
+          <td style="color: #55d0ff;">15 Feb 2024</td>
           <td style="text-align: center"><input type="text" class="from" placeholder="00:00" style="text-align: center; border: 1px solid black"></td>
           <td style="text-align: center"><input type="text" class="to" placeholder="00:00" style="text-align: center; border: 1px solid black"></td>
           <td class="total-time">--</td>
@@ -128,6 +128,27 @@
         <tr class="rows">
           <td>Friday</td>
           <td>16 Feb 2024</td>
+          <td style="text-align: center"><input type="text" class="from" placeholder="00:00" style="text-align: center; border: 1px solid black"></td>
+          <td style="text-align: center"><input type="text" class="to" placeholder="00:00" style="text-align: center; border: 1px solid black"></td>
+          <td class="total-time">--</td>
+        </tr>
+        <tr class="rows">
+          <td style="color: #55d0ff;">Saturday</td>
+          <td style="color: #55d0ff;">17 Feb 2024</td>
+          <td style="text-align: center"><input type="text" class="from" placeholder="00:00" style="text-align: center; border: 1px solid black"></td>
+          <td style="text-align: center"><input type="text" class="to" placeholder="00:00" style="text-align: center; border: 1px solid black"></td>
+          <td class="total-time">--</td>
+        </tr>
+        <tr class="rows">
+          <td>Monday</td>
+          <td>19 Feb 2024</td>
+          <td style="text-align: center"><input type="text" class="from" placeholder="00:00" style="text-align: center; border: 1px solid black"></td>
+          <td style="text-align: center"><input type="text" class="to" placeholder="00:00" style="text-align: center; border: 1px solid black"></td>
+          <td class="total-time">--</td>
+        </tr>
+        <tr class="rows">
+          <td style="color: #55d0ff;">Tuesday</td>
+          <td style="color: #55d0ff;">20 Feb 2024</td>
           <td style="text-align: center"><input type="text" class="from" placeholder="00:00" style="text-align: center; border: 1px solid black"></td>
           <td style="text-align: center"><input type="text" class="to" placeholder="00:00" style="text-align: center; border: 1px solid black"></td>
           <td class="total-time">--</td>
